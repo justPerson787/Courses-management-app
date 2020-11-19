@@ -28,7 +28,7 @@ const CourseForm = ({
             />
 
             <SelectInput
-                name="authorID"
+                name="authorId"
                 label="Author"
                 value={course.authorId || ""}
                 defaultOption="Select Author"
