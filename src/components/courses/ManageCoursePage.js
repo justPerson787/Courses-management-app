@@ -49,8 +49,12 @@ function ManageCoursePage({
     event.preventDefault();
     setSaving(true);
     saveCourse(course).then(() => {
-      toast.success("course saved.");
+      toast.success("Course saved.");
       history.push("/courses");
+    })
+    .catch(error => {
+      setSaving(false);
+      setErrors({ onSave: error.message })
     });
   }
 
