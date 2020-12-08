@@ -1,6 +1,6 @@
 {
-  "name": "ps-redux",
-  "description": "React and Redux Pluralsight course by Cory House",
+  "name": "ABC",
+  "description": "React and Redux project",
   "scripts": {
     "start": "run-p start:dev start:api",
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
@@ -9,6 +9,9 @@
     "test": "jest --watch"
   },
   "jest": {
+    "setupFiles": [
+      "./tools/testSetup.js"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/fileMock.js",
       "\\.(css|less)$": "<rootDir>/tools/styleMock.js"
