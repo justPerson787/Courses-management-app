@@ -8,7 +8,7 @@ const webpackBundleAnalyzer = require('webpack-bundle-analyzer');
 process.env.NODE_ENV = 'production';
 
 module.exports = {
-    mode: 'dproduction',
+    mode: 'production',
     target: 'web',
     devtool: 'source-map',/*shows orininal code in browser for debugging*/
     entry: './src/index',
